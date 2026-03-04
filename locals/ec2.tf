@@ -1,5 +1,5 @@
 resource "aws_instance" "terraform" {
-    ami = "ami-09c813fb71547fc4f"
+    ami = var.ami
     instance_type = local.instance_type
     vpc_security_group_ids = [aws_security_group.allow-allways.id]
     tags = local.ec2_tags

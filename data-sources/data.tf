@@ -1,4 +1,4 @@
-data "aws_ami" "terraform" {
+data "aws_ami" "devops" {
     owners = ["973714476881"]
     most_recent = true
 
@@ -21,7 +21,7 @@ data "aws_ami" "terraform" {
 }
 output "ami_id" {
 
-    value = data.aws_ami.terraform.id
+    value = data.aws_ami.devops.id
   
 }
 
